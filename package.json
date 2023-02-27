@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8",
+    "@types/node": "^18.14.2",
     "@types/prettier": "^2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
@@ -29,9 +30,13 @@
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-react": "^7.32.2",
+    "msw": "^1.1.0",
     "prettier": "^2.8.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.4.1",
+  "msw": {
+    "workerDirectory": "public"
+  }
 }
