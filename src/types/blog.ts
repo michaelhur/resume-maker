@@ -13,6 +13,6 @@ export interface Blog {
     isPinned: boolean;
     isPublic: boolean;
     editorType: editorType;
-    createdAt: string;
-    updatedAt: string;
+    createdAt: number;
+    updatedAt: number;
 }

@@ -11,6 +11,6 @@ export interface Portfolio {
     viewCount: number;
     likeCount: number;
     commentCount: number;
-    createdAt: Date;
-    updatedAt: Date;
+    createdAt: number;
+    updatedAt: number;
 }

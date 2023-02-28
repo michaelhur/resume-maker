@@ -5,5 +5,5 @@ export interface Question {
     response: string;
     presentOrder: number;
     isPublic: boolean;
-    createdAt: Date;
+    createdAt: number;
 }
