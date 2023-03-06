@@ -1,7 +1,10 @@
 import { css } from '@emotion/react';
 import { theme } from './theme';
+import emotionReset from 'emotion-reset';
 
 export const globalStyle = css`
+    ${emotionReset}
+
     * {
         margin: 0;
         padding: 0;
