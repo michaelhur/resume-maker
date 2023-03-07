@@ -2,8 +2,33 @@ import { css } from '@emotion/react';
 import { theme } from './theme';
 import emotionReset from 'emotion-reset';
 
+import BMHANNA_AIR_TTF from '@assets/fonts/BMHANNAAir/BMHANNAAir.ttf';
+import BMHANNA_AIR_WOFF from '@assets/fonts/BMHANNAAir/BMHANNAAir.woff';
+import BMHANNA_AIR_WOFF2 from '@assets/fonts/BMHANNAAir/BMHANNAAir.woff2';
+import BMHANNA_PRO_TTF from '@assets/fonts/BMHANNAPro/BMHANNAPro.ttf';
+import BMHANNA_PRO_WOFF from '@assets/fonts/BMHANNAPro/BMHANNAPro.woff';
+import BMHANNA_PRO_WOFF2 from '@assets/fonts/BMHANNAPro/BMHANNAPro.woff2';
+
 export const globalStyle = css`
     ${emotionReset}
+
+    @font-face {
+        font-family: 'BMHANNAPro';
+        src: url('${BMHANNA_PRO_WOFF2}') format('woff2'), url('${BMHANNA_PRO_WOFF}') format('woff'),
+            url('${BMHANNA_PRO_TTF}') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: optional;
+    }
+
+    @font-face {
+        font-family: 'BMHANNAAir';
+        src: url('${BMHANNA_AIR_WOFF2}') format('woff2'), url('${BMHANNA_AIR_WOFF}') format('woff'),
+            url('${BMHANNA_AIR_TTF}') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: optional;
+    }
 
     * {
         margin: 0;

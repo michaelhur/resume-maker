@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { RecoilRoot } from 'recoil';
-import { ReactComponent as Icon } from '@assets/icons/add.svg';
 
 function App() {
     const [isDark, setIsDark] = useState<boolean>(false);
@@ -18,8 +17,6 @@ function App() {
     };
     return (
         <RecoilRoot>
-            <Icon />
-            <span>{isDark}</span>
             <button onClick={onClickHandler}>Click!</button>
         </RecoilRoot>
     );
