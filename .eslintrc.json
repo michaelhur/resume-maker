@@ -21,5 +21,26 @@
     "plugins": ["react", "@typescript-eslint"],
     "rules": {
         "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", "tsx", ".d.ts"]
+            },
+            "alias": {
+                "extensions": [".js", ".jsx", ".ts", "tsx", ".d.ts"],
+                "map": [
+                    ["@public", "/public"],
+                    ["@src", "/src"],
+                    ["@assets", "/src/assets"],
+                    ["@components", "./src/components"],
+                    ["@hooks", "./src/hooks"],
+                    ["@pages", "./src/pages"],
+                    ["@utils", "./src/utils"],
+                    ["@styles", "./src/styles"],
+                    ["@typings", "./src/typings"]
+                ]
+            }
+        }
     }
 }

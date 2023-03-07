@@ -1,6 +1,6 @@
 import { rest } from 'msw';
 import { users } from '../data/users';
-import { User } from '../../types/user';
+import { User } from '@typings/user';
 
 export const userHandler = [
     rest.get('/api/users', (req, res, ctx) => {

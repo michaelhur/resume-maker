@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 import { v4 } from 'uuid';
 import { portfolioList } from '../data/portfolio';
-import { Portfolio } from '../../types/portfolio';
+import { Portfolio } from '@typings/portfolio';
 
 export const portfolioHandler = [
     rest.get('/api/users/:userId/portfolio', (req, res, ctx) => {

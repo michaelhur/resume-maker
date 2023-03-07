@@ -32,6 +32,7 @@
     "@vitejs/plugin-react-swc": "^3.0.0",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-react": "^7.32.2",
     "msw": "^1.1.0",
     "prettier": "^2.8.4",

@@ -1,6 +1,6 @@
 import { rest } from 'msw';
 import { careerList } from '../data/career';
-import { Career } from '../../types/resume';
+import { Career } from '@typings/resume';
 import { v4 } from 'uuid';
 
 export const careerHandler = [

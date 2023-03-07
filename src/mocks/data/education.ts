@@ -1,4 +1,4 @@
-import { Education } from '../../types/resume';
+import { Education } from '@typings/resume';
 
 export const educationList: Array<Education> = [
     {

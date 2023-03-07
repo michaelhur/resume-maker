@@ -1,4 +1,4 @@
-import { Portfolio } from '../../types/portfolio';
+import { Portfolio } from '@typings/portfolio';
 
 export const portfolioList: Portfolio[] = [
     {
