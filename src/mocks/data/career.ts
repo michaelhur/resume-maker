@@ -1,4 +1,4 @@
-import { Career } from '../../types/resume';
+import { Career } from '@typings/resume';
 
 export const careerList: Array<Career> = [
     {

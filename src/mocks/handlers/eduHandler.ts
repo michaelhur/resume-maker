@@ -1,6 +1,6 @@
 import { rest } from 'msw';
 import { educationList } from '../data/education';
-import { Education } from '../../types/resume';
+import { Education } from '@typings/resume';
 import { v4 } from 'uuid';
 
 export const eduHandler = [

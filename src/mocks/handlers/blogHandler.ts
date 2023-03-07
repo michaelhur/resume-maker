@@ -1,6 +1,6 @@
 import { rest } from 'msw';
 import { blogs } from '../data/blogs';
-import { Blog } from '../../types/blog';
+import { Blog } from '@typings/blog';
 import { v4 } from 'uuid';
 
 export const blogHandler = [

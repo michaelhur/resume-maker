@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 import { v4 } from 'uuid';
 import { questions } from '../data/questions';
-import { Question } from '../../types/question';
+import { Question } from '@typings/question';
 
 export const questionHandler = [
     rest.get('/api/users/:userId/questions', (req, res, ctx) => {
