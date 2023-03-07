@@ -33,10 +33,12 @@
                     ["@public", "/public"],
                     ["@src", "/src"],
                     ["@assets", "/src/assets"],
+                    ["@constants", "./src/constants"],
                     ["@components", "./src/components"],
                     ["@hooks", "./src/hooks"],
                     ["@pages", "./src/pages"],
                     ["@utils", "./src/utils"],
+                    ["@recoils", "./src/recoils"],
                     ["@styles", "./src/styles"],
                     ["@typings", "./src/typings"]
                 ]
