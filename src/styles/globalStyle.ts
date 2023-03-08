@@ -112,6 +112,16 @@ export const globalStyle = css`
         font-family: 'BMHANNAAir';
         background-color: var(--grey100);
         color: var(--grey900);
+
+        margin: 0 auto;
+
+        @media (min-width: 1040px) {
+            max-width: 1040px;
+        }
+
+        @media (max-width: 1040px) {
+            max-width: 100vw;
+        }
     }
 
     a {

@@ -14,6 +14,8 @@ export default defineConfig({
     resolve: {
         alias: [
             { find: '@public', replacement: path.resolve(__dirname, '/public') },
+            { find: '@fonts', replacement: path.resolve(__dirname, '/public/assets/fonts') },
+            { find: '@icons', replacement: path.resolve(__dirname, '/public/assets/icons') },
             { find: '@src', replacement: path.resolve(__dirname, '/src') },
             { find: '@assets', replacement: path.resolve(__dirname, '/src/assets') },
             { find: '@constants', replacement: path.resolve(__dirname, '/src/constants') },
