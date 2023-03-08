@@ -40,7 +40,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:5.53.0"],\
             ["@typescript-eslint/parser", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:5.53.0"],\
             ["@vitejs/plugin-react-swc", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:3.2.0"],\
-            ["emotion-reset", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:3.0.1"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-prettier", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:8.6.0"],\
             ["eslint-import-resolver-alias", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:1.1.2"],\
@@ -2551,28 +2550,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["emotion-reset", [\
-        ["npm:3.0.1", {\
-          "packageLocation": "./.yarn/cache/emotion-reset-npm-3.0.1-061e1e27b7-788cfbf6f3.zip/node_modules/emotion-reset/",\
-          "packageDependencies": [\
-            ["emotion-reset", "npm:3.0.1"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:3.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/emotion-reset-virtual-d96e8e9df6/0/cache/emotion-reset-npm-3.0.1-061e1e27b7-788cfbf6f3.zip/node_modules/emotion-reset/",\
-          "packageDependencies": [\
-            ["emotion-reset", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:3.0.1"],\
-            ["@emotion/react", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:11.10.6"],\
-            ["@types/emotion__react", null]\
-          ],\
-          "packagePeers": [\
-            "@emotion/react",\
-            "@types/emotion__react"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["encoding", [\
         ["npm:0.1.13", {\
           "packageLocation": "./.yarn/cache/encoding-npm-0.1.13-82a1837d30-bb98632f8f.zip/node_modules/encoding/",\
@@ -5003,7 +4980,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:5.53.0"],\
             ["@typescript-eslint/parser", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:5.53.0"],\
             ["@vitejs/plugin-react-swc", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:3.2.0"],\
-            ["emotion-reset", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:3.0.1"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-prettier", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:8.6.0"],\
             ["eslint-import-resolver-alias", "virtual:cb06f0f70ce0314e45d6fd879b8b2799795625fbc231f548c9eb920421000a5f0fbf56907cc5078c0dae22e2d229168a2cb0010734e087c4931c98f1853b1bc1#npm:1.1.2"],\

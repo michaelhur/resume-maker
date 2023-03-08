@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { theme } from './theme';
-import emotionReset from 'emotion-reset';
+import { Reset } from '@styles/reset';
 
 import BMHANNA_AIR_TTF from '@assets/fonts/BMHANNAAir/BMHANNAAir.ttf';
 import BMHANNA_AIR_WOFF from '@assets/fonts/BMHANNAAir/BMHANNAAir.woff';
@@ -10,7 +10,7 @@ import BMHANNA_PRO_WOFF from '@assets/fonts/BMHANNAPro/BMHANNAPro.woff';
 import BMHANNA_PRO_WOFF2 from '@assets/fonts/BMHANNAPro/BMHANNAPro.woff2';
 
 export const globalStyle = css`
-    ${emotionReset}
+    ${Reset()}
 
     @font-face {
         font-family: 'BMHANNAPro';
@@ -34,7 +34,6 @@ export const globalStyle = css`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font: inherit;
         color: inherit;
         flex-shrink: 0;
     }

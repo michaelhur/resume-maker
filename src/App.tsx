@@ -4,7 +4,10 @@ import { RecoilRoot } from 'recoil';
 function App() {
     return (
         <>
-            <RecoilRoot>1</RecoilRoot>
+            <RecoilRoot>
+                <h1>H1</h1>
+                <h2>H2</h2>
+            </RecoilRoot>
         </>
     );
 }
