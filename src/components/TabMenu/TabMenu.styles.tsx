@@ -30,12 +30,7 @@ export const StyledTab = styled(NavLink)(
         borderStyle: 'solid',
         borderCollapse: 'collapse',
 
-        '&.active': {
-            color: 'var(--primary500)',
-            borderColor: 'var(--primary500)',
-        },
-
-        '&:hover': {
+        '&.active, :hover, :active': {
             color: 'var(--primary500)',
             borderColor: 'var(--primary500)',
         },
