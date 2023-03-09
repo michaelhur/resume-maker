@@ -12,7 +12,7 @@ export const StyledMenu = styled.nav`
 
 interface StyledTabProps extends NavLinkProps {
     size: 'small' | 'large';
-    borderType: 'all' | 'bottom';
+    position: 'all' | 'bottom';
 }
 
 export const StyledTab = styled(NavLink)(
@@ -35,9 +35,9 @@ export const StyledTab = styled(NavLink)(
             borderColor: 'var(--primary500)',
         },
     },
-    ({ size, borderType }: StyledTabProps) => ({
+    ({ size, position }: StyledTabProps) => ({
         fontSize: size === 'large' ? '16px' : '12px',
         padding: size === 'large' ? '24px 16px' : '16px 8px',
-        borderWidth: borderType === 'all' ? '1px' : '0 0 1px 0',
+        borderWidth: position === 'all' ? '1px' : '0 0 1px 0',
     }),
 );
