@@ -31,6 +31,7 @@ export const StyledTab = styled(NavLink)(
         borderCollapse: 'collapse',
 
         '&.active, :hover, :active': {
+            fontWeight: '600',
             color: 'var(--primary500)',
             borderColor: 'var(--primary500)',
         },
