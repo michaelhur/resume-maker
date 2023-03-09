@@ -10,16 +10,17 @@ interface Menu {
 interface TabMenuProps {
     menus: Array<Menu>;
     size: 'small' | 'large';
+    borderType: 'all' | 'bottom';
 }
 
-export const TabMenu = ({ menus, size }: TabMenuProps) => {
+export const TabMenu = ({ menus, size, borderType }: TabMenuProps) => {
     const iconSize = size === 'large' ? '24px' : '16px';
 
     return (
         <StyledMenu>
             {menus.map((menu) => {
                 return (
-                    <StyledTab key={menu.name} aria-current="page" to={menu.path} size={size}>
+                    <StyledTab key={menu.name} to={menu.path} size={size} borderType={borderType} aria-current="page">
                         {menu.icon && <Icon name={menu.icon} size={iconSize} color={'var(--primary500)'} />}
                         {menu.name}
                     </StyledTab>

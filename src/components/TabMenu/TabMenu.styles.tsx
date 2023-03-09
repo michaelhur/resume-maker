@@ -12,6 +12,7 @@ export const StyledMenu = styled.nav`
 
 interface StyledTabProps extends NavLinkProps {
     size: 'small' | 'large';
+    borderType: 'all' | 'bottom';
 }
 
 export const StyledTab = styled(NavLink)(
@@ -20,14 +21,28 @@ export const StyledTab = styled(NavLink)(
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        gap: '4px',
 
-        '& .active': {
+        flex: '1 0 0',
+
+        color: 'var(--grey500)',
+        borderColor: 'var(--grey300)',
+        borderStyle: 'solid',
+        borderCollapse: 'collapse',
+
+        '&.active': {
             color: 'var(--primary500)',
-            borderBottom: '1px solid var(--primary500)',
+            borderColor: 'var(--primary500)',
+        },
+
+        '&:hover': {
+            color: 'var(--primary500)',
+            borderColor: 'var(--primary500)',
         },
     },
-    ({ size }: StyledTabProps) => ({
+    ({ size, borderType }: StyledTabProps) => ({
         fontSize: size === 'large' ? '16px' : '12px',
         padding: size === 'large' ? '24px 16px' : '16px 8px',
+        borderWidth: borderType === 'all' ? '1px' : '0 0 1px 0',
     }),
 );

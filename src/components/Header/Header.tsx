@@ -49,7 +49,7 @@ export const Header = () => {
                     </Styled.ProfileSummaryBottomSection>
                 </Styled.ProfileSummarySection>
             </Styled.ProfileSummaryWrapper>
-            <TabMenu menus={menus} size={'large'} />
+            <TabMenu menus={menus} size={'large'} borderType={'all'} />
         </Styled.Header>
     );
 };
