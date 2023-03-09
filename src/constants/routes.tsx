@@ -1,6 +1,3 @@
-import { createBrowserRouter } from 'react-router-dom';
-import Profile from '@pages/Profile';
-
 export const ROUTES = {
     HOME: '/',
     SIGN_UP: '/sign-up',
