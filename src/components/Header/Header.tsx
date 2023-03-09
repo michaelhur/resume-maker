@@ -1,7 +1,13 @@
 import * as Styled from './Header.styles';
 import { users } from '@src/mocks/data/users';
-import { ButtonGroup, DisplayName, ProfileBio } from './Header.styles';
-import { Icon } from '@components/Icon/Icon';
+import { ListItem } from '@components/ListItem/ListItem';
+import { TabMenu } from '@components/TabMenu/TabMenu';
+
+const menus = [
+    { name: 'Profile', icon: 'Ui/apps', path: '/profile' },
+    { name: 'Blog', icon: 'Ui/event', path: '/blog' },
+    { name: 'Portfolio', icon: 'Ui/face_id', path: '/portfolio' },
+];
 
 export const Header = () => {
     const user = users[0];
@@ -12,20 +18,38 @@ export const Header = () => {
             </Styled.ProfileCoverImageWrapper>
             <Styled.ProfileSummaryWrapper>
                 <Styled.ProfileImageWrapper>
-                    <img src={user.profileImageUrl} alt="Profile Image" />
+                    <img src={user.profileImageUrl} alt="Index Image" />
                 </Styled.ProfileImageWrapper>
                 <Styled.ProfileSummarySection>
                     <Styled.ProfileSummaryTopSection>
-                        <Styled.DisplayName>{user.displayName}</Styled.DisplayName>
+                        <Styled.DisplayName>{user.displayName ? user.displayName : user.name}</Styled.DisplayName>
                     </Styled.ProfileSummaryTopSection>
-                    {/*<Styled.ProfileSummaryMidSection>*/}
-                    {/*    <Styled.ProfileBio>{user.bio}</Styled.ProfileBio>*/}
-                    {/*</Styled.ProfileSummaryMidSection>*/}
-                    <Styled.ProfileSummaryBottomSection>1</Styled.ProfileSummaryBottomSection>
-                    <Styled.ProfileBio>{user.bio}</Styled.ProfileBio>
+                    {user.bio && (
+                        <Styled.ProfileSummaryMidSection>
+                            <Styled.ProfileBio>{user.bio}</Styled.ProfileBio>
+                        </Styled.ProfileSummaryMidSection>
+                    )}
+                    <Styled.ProfileSummaryBottomSection>
+                        <ListItem
+                            iconName={'vite'}
+                            iconSize={16}
+                            iconColor={'black'}
+                            itemName={'프론트엔드 개발자'}
+                            itemSize={'16px'}
+                            itemColor={'black'}
+                        />
+                        <ListItem
+                            iconName={'Ui/apps'}
+                            iconSize={16}
+                            iconColor={'black'}
+                            itemName={'신입'}
+                            itemSize={'16px'}
+                            itemColor={'black'}
+                        />
+                    </Styled.ProfileSummaryBottomSection>
                 </Styled.ProfileSummarySection>
             </Styled.ProfileSummaryWrapper>
-            <Icon name={'add'} />
+            <TabMenu menus={menus} size={'large'} />
         </Styled.Header>
     );
 };

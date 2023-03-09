@@ -35,7 +35,7 @@ export const globalStyle = css`
         padding: 0;
         box-sizing: border-box;
         color: inherit;
-        flex-shrink: 0;
+        //flex-shrink: 0;
     }
 
     :root {
@@ -146,5 +146,8 @@ export const globalStyle = css`
     }
     div::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera*/
+    }
+    span {
+        line-height: 1.5;
     }
 `;

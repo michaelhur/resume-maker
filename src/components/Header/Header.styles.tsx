@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { TabMenu } from '@components/TabMenu/TabMenu';
 
 export const Header = styled.div`
     display: flex;
@@ -29,9 +30,11 @@ export const ProfileSummaryWrapper = styled.div`
     align-items: flex-start;
     gap: 1rem;
 
-    margin-top: -56px;
+    padding: 16px;
 
     width: 100%;
+
+    margin-top: -56px;
 `;
 
 export const ProfileImageWrapper = styled.div`
@@ -41,11 +44,13 @@ export const ProfileImageWrapper = styled.div`
     align-items: center;
     gap: 1rem;
 
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
 
-    border: 14px solid var(--grey50);
+    border: 4px solid var(--grey50);
     border-radius: 50%;
+
+    flex-shrink: 0;
 
     & img {
         width: 100%;
@@ -87,6 +92,8 @@ export const ProfileSummaryBottomSection = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    gap: 8px;
 `;
 
 export const DisplayName = styled.h2`
@@ -111,8 +118,7 @@ export const ProfileBio = styled.span`
     -webkit-line-clamp: 2; /* number of lines to show */
     line-clamp: 2;
     -webkit-box-orient: vertical;
-
-    //width: 100%;
+    //flex-shrink: 1;
 
     @media (max-width: 600px) {
         -webkit-line-clamp: 3; /* number of lines to show */
