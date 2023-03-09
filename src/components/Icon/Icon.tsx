@@ -23,13 +23,13 @@ export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = tr
 
 const StyledSVG = styled(SVG)(
     {
-        '&:active, .active': {
-            fill: 'var(--primary500)',
+        '&.active, :active': {
+            color: 'var(--primary500)',
         },
     },
     ({ fill, hoverable }: StyledSVGProps) => ({
         '&:hover': {
-            fill: !hoverable ? 'var(--primary500)' : fill,
+            color: hoverable === 1 ? 'var(--primary500)' : fill,
         },
     }),
 );

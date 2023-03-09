@@ -33,7 +33,7 @@ export const Header = () => {
                         <ListItem
                             iconName={'vite'}
                             iconSize={16}
-                            iconColor={'black'}
+                            iconColor={'purple'}
                             itemName={'프론트엔드 개발자'}
                             itemSize={'16px'}
                             itemColor={'black'}
@@ -41,7 +41,7 @@ export const Header = () => {
                         <ListItem
                             iconName={'Ui/apps'}
                             iconSize={16}
-                            iconColor={'black'}
+                            iconColor={'red'}
                             itemName={'신입'}
                             itemSize={'16px'}
                             itemColor={'black'}
@@ -49,7 +49,7 @@ export const Header = () => {
                     </Styled.ProfileSummaryBottomSection>
                 </Styled.ProfileSummarySection>
             </Styled.ProfileSummaryWrapper>
-            <TabMenu menus={menus} size={'large'} borderType={'all'} />
+            <TabMenu menus={menus} size={'large'} position={'all'} />
         </Styled.Header>
     );
 };
