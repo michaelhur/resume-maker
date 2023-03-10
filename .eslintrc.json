@@ -36,6 +36,7 @@
                     ["@constants", "./src/constants"],
                     ["@components", "./src/components"],
                     ["@hooks", "./src/hooks"],
+                    ["@layouts", "./src/layouts"],
                     ["@pages", "./src/pages"],
                     ["@utils", "./src/utils"],
                     ["@recoils", "./src/recoils"],
