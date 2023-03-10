@@ -1,6 +1,6 @@
-import SVG from 'react-inlinesvg';
-import React from 'react';
-import { HoverableSVG } from '@components/Icon/Icon.styles';
+import React, { lazy, Suspense } from 'react';
+import Loading from '@components/Loading/Loading';
+import { css } from '@emotion/react';
 
 interface IconProps {
     name: string;
@@ -9,10 +9,26 @@ interface IconProps {
     hoverable?: boolean;
 }
 
-export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = true }: IconProps) => {
-    const svgPath = `./assets/icons/${name}.svg`;
+export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = false }: IconProps) => {
+    const filePath = `../../assets/icons/${name}.svg`;
+    const SvgComponent = lazy(() => import(filePath).then((module) => ({ default: module.ReactComponent })));
 
-    // TODO: Make it one component 'StyledSVG' and make 'hoverable' a prop.
-    if (hoverable) return <SVG src={svgPath} height={size} width={size} fill={color} />;
-    return <HoverableSVG src={svgPath} height={size} width={size} fill={color} />;
+    const hoverColor = hoverable ? 'var(--primary500)' : 'var(--grey900)';
+
+    return (
+        <Suspense fallback={<Loading />}>
+            <SvgComponent
+                css={css`
+                    &.active,
+                    :active,
+                    &:hover {
+                        color: ${hoverColor};
+                    }
+                `}
+                width={size}
+                height={size}
+                fill={color}
+            />
+        </Suspense>
+    );
 };

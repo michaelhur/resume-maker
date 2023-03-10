@@ -21,7 +21,9 @@ export const TabMenu = ({ menus, size, position }: TabMenuProps) => {
             {menus.map((menu) => {
                 return (
                     <StyledTab key={menu.name} to={menu.path} size={size} position={position} aria-current="page">
-                        {menu.icon && <Icon name={menu.icon} size={iconSize} color={'var(--primary500)'} />}
+                        {menu.icon && (
+                            <Icon name={menu.icon} size={iconSize} color={'var(--primary500)'} hoverable={true} />
+                        )}
                         {menu.name}
                     </StyledTab>
                 );

@@ -5,8 +5,8 @@ import { TabMenu } from '@components/TabMenu/TabMenu';
 
 const menus = [
     { name: 'Profile', icon: 'Ui/apps', path: '/profile' },
-    { name: 'Blog', icon: 'Ui/event', path: '/blog' },
-    { name: 'Portfolio', icon: 'Ui/face_id', path: '/portfolio' },
+    { name: 'Blog', icon: 'Editor/Filter', path: '/blog' },
+    { name: 'Portfolio', icon: 'Communication/shopping_cart', path: '/portfolio' },
 ];
 
 export const Header = () => {
@@ -31,7 +31,7 @@ export const Header = () => {
                     )}
                     <Styled.ProfileSummaryBottomSection>
                         <ListItem
-                            iconName={'vite'}
+                            iconName={'Editor/location'}
                             iconSize={16}
                             iconColor={'purple'}
                             itemName={'프론트엔드 개발자'}
