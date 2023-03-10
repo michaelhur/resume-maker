@@ -1,13 +1,6 @@
 import * as Styled from './Header.styles';
 import { users } from '@src/mocks/data/users';
 import { ListItem } from '@components/ListItem/ListItem';
-import { TabMenu } from '@components/TabMenu/TabMenu';
-
-const menus = [
-    { name: 'Profile', icon: 'Ui/apps', path: '/profile' },
-    { name: 'Blog', icon: 'Editor/Filter', path: '/blog' },
-    { name: 'Portfolio', icon: 'Communication/shopping_cart', path: '/portfolio' },
-];
 
 export const Header = () => {
     const user = users[0];
@@ -49,7 +42,6 @@ export const Header = () => {
                     </Styled.ProfileSummaryBottomSection>
                 </Styled.ProfileSummarySection>
             </Styled.ProfileSummaryWrapper>
-            <TabMenu menus={menus} size={'large'} position={'all'} />
         </Styled.Header>
     );
 };

@@ -16,3 +16,9 @@ export const ROUTES = {
     VIEW_PORTFOLIO: '/portfolio/:projectId',
     WRITE_PORTFOLIO: '/portfolio/write',
 };
+
+export const PROFILE_TAB_MENU = [
+    { name: 'Profile', icon: 'Ui/apps', path: '/profile' },
+    { name: 'Blog', icon: 'Editor/Filter', path: '/blog' },
+    { name: 'Portfolio', icon: 'Communication/shopping_cart', path: '/portfolio' },
+];
