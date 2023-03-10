@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, memo, Suspense } from 'react';
 import Loading from '@components/Loading/Loading';
 import { css } from '@emotion/react';
 
@@ -9,11 +9,13 @@ interface IconProps {
     hoverable?: boolean;
 }
 
-export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = false }: IconProps) => {
+export const Icon = memo(({ name, size = 24, color = 'var(--grey900)', hoverable = false }: IconProps) => {
     const filePath = `../../assets/icons/${name}.svg`;
     const SvgComponent = lazy(() => import(filePath).then((module) => ({ default: module.ReactComponent })));
 
     const hoverColor = hoverable ? 'var(--primary500)' : 'var(--grey900)';
+
+    console.log(`icon: ${name}`);
 
     return (
         <Suspense fallback={<Loading />}>
@@ -31,4 +33,6 @@ export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = fa
             />
         </Suspense>
     );
-};
+});
+
+Icon.displayName = 'Icon';
