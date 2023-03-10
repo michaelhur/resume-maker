@@ -9,7 +9,13 @@ export default defineConfig({
         react({
             jsxImportSource: '@emotion/react',
         }),
-        svgr(),
+        svgr({
+            exportAsDefault: false,
+            svgrOptions: {
+                icon: 'current',
+                memo: true,
+            },
+        }),
     ],
     resolve: {
         alias: [

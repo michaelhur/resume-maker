@@ -9,9 +9,14 @@ interface IconProps {
     hoverable?: boolean;
 }
 
-export const Icon = memo(({ name, size = 24, color = 'var(--grey900)', hoverable = false }: IconProps) => {
-    const filePath = `../../assets/icons/${name}.svg`;
-    const SvgComponent = lazy(() => import(filePath).then((module) => ({ default: module.ReactComponent })));
+export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = false }: IconProps) => {
+    // const filePath = `../../assets/icons/${name}.svg`;
+    const splitName = name.split('/');
+    const SvgComponent = lazy(() =>
+        import(`../../assets/icons/${splitName[0]}/${splitName[1]}.svg`).then((module) => ({
+            default: module.ReactComponent,
+        })),
+    );
 
     const hoverColor = hoverable ? 'var(--primary500)' : 'var(--grey900)';
 
@@ -33,6 +38,4 @@ export const Icon = memo(({ name, size = 24, color = 'var(--grey900)', hoverable
             />
         </Suspense>
     );
-});
-
-Icon.displayName = 'Icon';
+};
