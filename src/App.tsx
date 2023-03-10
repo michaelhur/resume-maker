@@ -1,11 +1,10 @@
 import React, { lazy, Suspense } from 'react';
 import { RecoilRoot } from 'recoil';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Header } from '@components/Header/Header';
-
 import Loading from '@components/Loading/Loading';
-import { Footer } from '@components/Footer/Footer';
 import { TabMenu } from '@components/TabMenu/TabMenu';
+import { Header } from '@layouts/Header/Header';
+import { Footer } from '@layouts/Footer/Footer';
 import { PROFILE_TAB_MENU } from '@constants/routes';
 
 const Profile = lazy(() => import('@pages/Profile'));
