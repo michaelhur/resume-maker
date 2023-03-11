@@ -6,6 +6,8 @@ export const users: User[] = [
         domainName: 'michaelhur',
         name: '허준혁',
         displayName: 'Michael Hur',
+        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nisl, rutrum at libero vitae, hendrerit ultrices arcu. Pellentesque mollis purus vehicula, laoreet ligula nec, euismod odio.',
+        coverImageUrl: 'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg',
         profileImageUrl:
             'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
         email: 'jhhur716@gmail.com',

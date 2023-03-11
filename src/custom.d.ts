@@ -4,6 +4,11 @@ declare module '*.svg' {
     const src: string;
     export default src;
 }
+//
+// declare module '*.svg' {
+//     const content: React.FC<React.SVGProps<SVGElement>>;
+//     export default content;
+// }
 
 declare module '*.woff2';
 declare module '*.woff';

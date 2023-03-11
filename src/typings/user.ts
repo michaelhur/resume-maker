@@ -13,6 +13,8 @@ export interface User {
     domainName: string;
     name: string;
     displayName?: string;
+    bio?: string;
+    coverImageUrl?: string;
     profileImageUrl?: string;
     email: string;
     socialLinks?: SocialLinks;

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { theme } from './theme';
-import emotionReset from 'emotion-reset';
+import { Reset } from '@styles/reset';
 
 import BMHANNA_AIR_TTF from '@assets/fonts/BMHANNAAir/BMHANNAAir.ttf';
 import BMHANNA_AIR_WOFF from '@assets/fonts/BMHANNAAir/BMHANNAAir.woff';
@@ -10,7 +10,7 @@ import BMHANNA_PRO_WOFF from '@assets/fonts/BMHANNAPro/BMHANNAPro.woff';
 import BMHANNA_PRO_WOFF2 from '@assets/fonts/BMHANNAPro/BMHANNAPro.woff2';
 
 export const globalStyle = css`
-    ${emotionReset}
+    ${Reset()}
 
     @font-face {
         font-family: 'BMHANNAPro';
@@ -34,9 +34,8 @@ export const globalStyle = css`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font: inherit;
         color: inherit;
-        flex-shrink: 0;
+        //flex-shrink: 0;
     }
 
     :root {
@@ -111,8 +110,18 @@ export const globalStyle = css`
 
     body {
         font-family: 'BMHANNAAir';
-        background-color: var(--grey100);
+        background-color: var(--grey1ㅎ00);
         color: var(--grey900);
+
+        margin: 0 auto;
+
+        @media (min-width: 1040px) {
+            max-width: 1040px;
+        }
+
+        @media (max-width: 1040px) {
+            max-width: 100vw;
+        }
     }
 
     a {
@@ -137,5 +146,8 @@ export const globalStyle = css`
     }
     div::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera*/
+    }
+    span {
+        line-height: 1.5;
     }
 `;
