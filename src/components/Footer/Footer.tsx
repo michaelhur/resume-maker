@@ -1,4 +1,4 @@
-import { StyledFooter, StyledFooterSection } from '@layouts/Footer/Footer.styles';
+import { StyledFooter, StyledFooterSection } from '@components/Footer/Footer.styles';
 
 export const Footer = () => {
     return (
