@@ -6,6 +6,8 @@ export const Header = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    padding-bottom: 16px;
 `;
 
 export const ProfileCoverImageWrapper = styled.div`
@@ -31,10 +33,16 @@ export const ProfileSummaryWrapper = styled.div`
     gap: 1rem;
 
     padding: 16px;
+    margin-top: -56px;
 
     width: 100%;
 
-    margin-top: -56px;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+
+        margin-top: -150px;
+    }
 `;
 
 export const ProfileImageWrapper = styled.div`
@@ -47,9 +55,6 @@ export const ProfileImageWrapper = styled.div`
     width: 200px;
     height: 200px;
 
-    border: 4px solid var(--grey50);
-    border-radius: 50%;
-
     flex-shrink: 0;
 
     & img {
@@ -58,6 +63,17 @@ export const ProfileImageWrapper = styled.div`
         object-fit: cover;
 
         border-radius: 50%;
+
+        border: 4px solid var(--grey50);
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 250px;
+
+        & img {
+            width: 250px;
+        }
     }
 `;
 
@@ -69,6 +85,12 @@ export const ProfileSummarySection = styled.div`
     gap: 8px;
 
     width: 100%;
+
+    padding-top: 72px;
+
+    @media (max-width: 600px) {
+        padding-top: 0;
+    }
 `;
 
 export const ProfileSummaryTopSection = styled.div`
@@ -77,7 +99,10 @@ export const ProfileSummaryTopSection = styled.div`
     justify-content: space-between;
     align-items: flex-start;
 
-    padding-top: 72px;
+    @media (max-width: 600px) {
+        align-items: center;
+        margin: 0 auto;
+    }
 `;
 
 export const ProfileSummaryMidSection = styled.div`
@@ -94,6 +119,11 @@ export const ProfileSummaryBottomSection = styled.div`
     align-items: flex-start;
 
     gap: 8px;
+
+    @media (max-width: 600px) {
+        justify-content: center;
+        width: 100%;
+    }
 `;
 
 export const DisplayName = styled.h2`

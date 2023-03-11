@@ -5,5 +5,5 @@ export const PageContainer = styled.div`
     height: auto;
     min-height: calc(100vh - 36px);
 
-    padding: 0 0 36px;
+    padding: 0 16px 36px;
 `;
