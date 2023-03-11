@@ -24,17 +24,17 @@ export const Header = () => {
                     )}
                     <Styled.ProfileSummaryBottomSection>
                         <ListItem
-                            iconName={'Editor/location'}
+                            iconName={'Editor/source_code'}
                             iconSize={16}
-                            iconColor={'purple'}
+                            iconColor={'black'}
                             itemName={'프론트엔드 개발자'}
                             itemSize={'16px'}
                             itemColor={'black'}
                         />
                         <ListItem
-                            iconName={'Ui/apps'}
+                            iconName={'Communication/growth_graph'}
                             iconSize={16}
-                            iconColor={'red'}
+                            iconColor={'black'}
                             itemName={'신입'}
                             itemSize={'16px'}
                             itemColor={'black'}

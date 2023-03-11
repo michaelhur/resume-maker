@@ -110,7 +110,7 @@ export const globalStyle = css`
 
     body {
         font-family: 'BMHANNAAir';
-        background-color: var(--grey100);
+        background-color: var(--grey1ㅎ00);
         color: var(--grey900);
 
         margin: 0 auto;

@@ -6,6 +6,7 @@ import { TabMenu } from '@components/TabMenu/TabMenu';
 import { Header } from '@layouts/Header/Header';
 import { Footer } from '@layouts/Footer/Footer';
 import { PROFILE_TAB_MENU } from '@constants/routes';
+import { Main } from '@layouts/Main/Main';
 
 const Profile = lazy(() => import('@pages/Profile'));
 const Portfolio = lazy(() => import('@pages/Portfolio'));
@@ -15,17 +16,19 @@ function App() {
     return (
         <>
             <RecoilRoot>
-                <Header />
-                <Suspense fallback={<Loading />}>
-                    <Router>
-                        <TabMenu menus={PROFILE_TAB_MENU} size={'large'} position={'all'} />
-                        <Routes>
-                            <Route path="/blog" element={<Blog />} />
-                            <Route path="/profile" element={<Profile />} />
-                            <Route path="/portfolio" element={<Portfolio />} />
-                        </Routes>
-                    </Router>
-                </Suspense>
+                <Main>
+                    <Header />
+                    <Suspense fallback={<></>}>
+                        <Router>
+                            <TabMenu menus={PROFILE_TAB_MENU} size={'large'} position={'all'} />
+                            <Routes>
+                                <Route path="/blog" element={<Blog />} />
+                                <Route path="/profile" element={<Profile />} />
+                                <Route path="/portfolio" element={<Portfolio />} />
+                            </Routes>
+                        </Router>
+                    </Suspense>
+                </Main>
                 <Footer />
             </RecoilRoot>
         </>

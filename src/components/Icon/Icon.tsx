@@ -1,5 +1,4 @@
-import React, { lazy, memo, Suspense } from 'react';
-import Loading from '@components/Loading/Loading';
+import React, { lazy, Suspense } from 'react';
 import { css } from '@emotion/react';
 
 interface IconProps {
@@ -10,7 +9,6 @@ interface IconProps {
 }
 
 export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = false }: IconProps) => {
-    // const filePath = `../../assets/icons/${name}.svg`;
     const splitName = name.split('/');
     const SvgComponent = lazy(() =>
         import(`../../assets/icons/${splitName[0]}/${splitName[1]}.svg`).then((module) => ({
@@ -23,7 +21,7 @@ export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = fa
     console.log(`icon: ${name}`);
 
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<></>}>
             <SvgComponent
                 css={css`
                     &.active,
