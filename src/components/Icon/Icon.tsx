@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { css } from '@emotion/react';
 
-interface IconProps {
+export interface IconProps {
     name: string;
     size?: number | string;
     color?: string;
@@ -16,7 +16,7 @@ export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = fa
         })),
     );
 
-    const hoverColor = hoverable ? 'var(--primary500)' : 'var(--grey900)';
+    const hoverColor = hoverable ? 'var(--primary500)' : color;
 
     return (
         <Suspense fallback={<></>}>

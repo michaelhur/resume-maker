@@ -1,23 +1,27 @@
-import { useEffect, useState } from 'react';
-import { User } from '@typings/user';
-import { fetcher } from '@src/apis';
+import { CareerRoadmap, EduRoadmap } from '@components/Roadmap/Roadmap';
+import { educationList } from '@src/mocks/data/education';
+import { careerList } from '@src/mocks/data/career';
 
 const Profile = () => {
-    const userId = 'e050ef0a-007a-4268-9039-a7c147b9f207';
-    const [profileData, setProfileData] = useState<User | null>(null);
-
-    useEffect(() => {
-        const fetchProfileData = async () => {
-            const response = await fetcher({ method: 'get', path: `/api/users/${userId}` });
-            console.log(response);
-            setProfileData(response);
-        };
-        fetchProfileData();
-    }, [userId]);
+    // const education = educationList[0];
+    // const career = careerList;
 
     return (
         <div>
-            <h1>Profile</h1>
+            Profile
+            {/*<div>*/}
+            {/*    {education && (*/}
+            {/*        <EduRoadmap*/}
+            {/*            schoolName={education.schoolName}*/}
+            {/*            startDate={education.startDate}*/}
+            {/*            endDate={education.endDate}*/}
+            {/*            isAttending={false}*/}
+            {/*            major={'수학'}*/}
+            {/*            degree={'degree'}*/}
+            {/*        />*/}
+            {/*    )}*/}
+            {/*</div>*/}
+            {/*<div>{career && career.map((item) => <CareerRoadmap key={item.careerId} {...item} />)}</div>*/}
         </div>
     );
 };

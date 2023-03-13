@@ -52,6 +52,7 @@ export const globalStyle = css`
         --primary800: ${theme.colors.light.primary_800};
         --primary900: ${theme.colors.light.primary_900};
 
+        --grey0: ${theme.colors.light.white};
         --grey50: ${theme.colors.light.grey_50};
         --grey100: ${theme.colors.light.grey_100};
         --grey200: ${theme.colors.light.grey_200};
@@ -62,6 +63,7 @@ export const globalStyle = css`
         --grey700: ${theme.colors.light.grey_700};
         --grey800: ${theme.colors.light.grey_800};
         --grey900: ${theme.colors.light.grey_900};
+        --grey1000: ${theme.colors.light.black};
 
         --red: ${theme.colors.light.red};
         --orange: ${theme.colors.light.orange};
@@ -86,6 +88,7 @@ export const globalStyle = css`
         --primary800: ${theme.colors.dark.primary_800};
         --primary900: ${theme.colors.dark.primary_900};
 
+        --grey0: ${theme.colors.dark.black};
         --grey50: ${theme.colors.dark.grey_50};
         --grey100: ${theme.colors.dark.grey_100};
         --grey200: ${theme.colors.dark.grey_200};
@@ -96,6 +99,7 @@ export const globalStyle = css`
         --grey700: ${theme.colors.dark.grey_700};
         --grey800: ${theme.colors.dark.grey_800};
         --grey900: ${theme.colors.dark.grey_900};
+        --grey1000: ${theme.colors.dark.white};
 
         --red: ${theme.colors.dark.red};
         --orange: ${theme.colors.dark.orange};
@@ -109,8 +113,8 @@ export const globalStyle = css`
     }
 
     body {
-        font-family: 'BMHANNAAir';
-        background-color: var(--grey1ㅎ00);
+        font-family: 'BMHANNAAir', 'Nanum Gothic';
+        background-color: var(--grey100);
         color: var(--grey900);
 
         margin: 0 auto;
