@@ -8,7 +8,8 @@ const Profile = () => {
 
     useEffect(() => {
         const fetchProfileData = async () => {
-            const response = await fetcher({ method: 'GET', path: `/api/users/${userId}` });
+            const response = await fetcher({ method: 'get', path: `/api/users/${userId}` });
+            console.log(response);
             setProfileData(response);
         };
         fetchProfileData();

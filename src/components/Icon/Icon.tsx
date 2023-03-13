@@ -18,8 +18,6 @@ export const Icon = ({ name, size = 24, color = 'var(--grey900)', hoverable = fa
 
     const hoverColor = hoverable ? 'var(--primary500)' : 'var(--grey900)';
 
-    console.log(`icon: ${name}`);
-
     return (
         <Suspense fallback={<></>}>
             <SvgComponent
