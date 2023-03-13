@@ -11,7 +11,7 @@ export interface Career {
     createdAt: number;
 }
 
-type DegreeCategory = 'diploma' | 'degree' | 'master' | 'phd';
+export type DegreeCategory = 'diploma' | 'degree' | 'master' | 'phd';
 
 export interface Education {
     userId: string;

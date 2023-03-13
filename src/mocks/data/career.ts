@@ -22,7 +22,7 @@ export const careerList: Array<Career> = [
         isWorking: false,
         position: 'Data Scientist',
         description:
-            '• Regulatory Intelligence에서 작동하는 iGaming 대시보드 구성 및 이용자 프로필 분석\n• 토론토시의 Liquor Compliance Demography 분석을 통하여 효과적인 조사원 인원 배치\n• 몬테카를로 방법을 적용하여경주에서 각 경주마의 순위를 예측하고 이를 통하여 부정행위를 방지하는 모델 개발',
+            '• Regulatory Intelligence에서 작동하는 iGaming 대시보드 구성 및 이용자 프로필 분석 Regulatory Intelligence에서 작동하는 iGaming 대시보드 구성 및 이용자 프로필 분석 Regulatory Intelligence에서 작동하는 iGaming 대시보드 구성 및 이용자 프로필 분석 Regulatory Intelligence에서 작동하는 iGaming 대시보드 구성 및 이용자 프로필 분석\n• 토론토시의 Liquor Compliance Demography 분석을 통하여 효과적인 조사원 인원 배치\n• 몬테카를로 방법을 적용하여경주에서 각 경주마의 순위를 예측하고 이를 통하여 부정행위를 방지하는 모델 개발',
         order: 2,
         createdAt: 1677482136,
     },
