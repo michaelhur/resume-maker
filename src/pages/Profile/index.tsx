@@ -8,12 +8,20 @@ const Profile = () => {
 
     return (
         <div>
-            <div>
-                {/*{career &&*/}
-                {/*    career.map((item) => {*/}
-                {/*        return <CareerRoadmap key={item.careerId} {...item} />;*/}
-                {/*    })}*/}
-            </div>
+            Profile
+            {/*<div>*/}
+            {/*    {education && (*/}
+            {/*        <EduRoadmap*/}
+            {/*            schoolName={education.schoolName}*/}
+            {/*            startDate={education.startDate}*/}
+            {/*            endDate={education.endDate}*/}
+            {/*            isAttending={false}*/}
+            {/*            major={'수학'}*/}
+            {/*            degree={'degree'}*/}
+            {/*        />*/}
+            {/*    )}*/}
+            {/*</div>*/}
+            {/*<div>{career && career.map((item) => <CareerRoadmap key={item.careerId} {...item} />)}</div>*/}
         </div>
     );
 };

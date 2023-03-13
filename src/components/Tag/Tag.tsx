@@ -6,17 +6,17 @@ interface TagProps {
     size: 'small' | 'medium' | 'large';
     theme: 'lineStyle' | 'onStyle' | 'offStyle';
     label?: string;
-    icon?: string;
+    closeButton?: boolean;
 }
 
-export const Tag = ({ keyword, size, theme, icon, label }: TagProps) => {
+export const Tag = ({ keyword, size, theme, closeButton, label }: TagProps) => {
     const themeCss = theme === 'lineStyle' ? lineStyle : theme === 'onStyle' ? onStyle : offStyle;
 
     return (
         <StyledTag css={themeCss} size={size}>
             {keyword}
             {label && <span>{label}</span>}
-            {icon && <Icon name={'Action/close'} />}
+            {closeButton && <Icon name={'Action/close'} />}
         </StyledTag>
     );
 };

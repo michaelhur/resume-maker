@@ -13,6 +13,13 @@ export interface Career {
 
 export type DegreeCategory = 'diploma' | 'degree' | 'master' | 'phd';
 
+export enum Degree {
+    'diploma' = '전문학사',
+    'degree' = '학사',
+    'master' = '석사',
+    'phd' = '박사',
+}
+
 export interface Education {
     userId: string;
     eduId: string;

@@ -1,7 +1,7 @@
 import { Icon } from '@components/Icon/Icon';
 import * as Styled from './Roadmap.styles';
 import { Tag } from '@components/Tag/Tag';
-import { DegreeCategory } from '@typings/resume';
+import { Degree, DegreeCategory } from '@typings/resume';
 
 interface EduRoadmapProps {
     schoolName: string;
@@ -23,21 +23,28 @@ interface CareerRoadmapProps {
 
 export const EduRoadmap = ({ schoolName, startDate, endDate, isAttending, major, degree }: EduRoadmapProps) => {
     const period = `${startDate} ~ ${isAttending ? '재학중' : endDate}`;
+    const degreeString = Degree['degree'];
 
     return (
         <Styled.RoadmapItem>
             <Icon name={'Arrow/Point'} size={10} color={'var(--primary500)'} hoverable={false} />
             <Styled.RoadmapDetailWrap>
+                <Styled.DetailTopSection>
+                    <Styled.DetailTitleSection>
+                        <Styled.RoadmapTitle>{schoolName}</Styled.RoadmapTitle>
+                        <Styled.RoadmapSubTitle>{major}</Styled.RoadmapSubTitle>
+                    </Styled.DetailTitleSection>
+                    <Styled.RoadmapTagSection>
+                        <Tag keyword={degreeString} size={'medium'} theme={'offStyle'} />
+                    </Styled.RoadmapTagSection>
+                </Styled.DetailTopSection>
                 <Styled.RoadmapDetailSection>
-                    <Styled.RoadmapTitle>{schoolName}</Styled.RoadmapTitle>
-                    <Styled.RoadmapSubTitle>{major}</Styled.RoadmapSubTitle>
                     <Styled.EduRoadmapDetail>
                         <span>{period}</span>
                         <span>|</span>
                         <span>{isAttending ? '재학중' : '졸업'}</span>
                     </Styled.EduRoadmapDetail>
                 </Styled.RoadmapDetailSection>
-                <Tag keyword={degree} size={'medium'} theme={'offStyle'} />
             </Styled.RoadmapDetailWrap>
         </Styled.RoadmapItem>
     );
@@ -57,9 +64,16 @@ export const CareerRoadmap = ({
         <Styled.RoadmapItem>
             <Icon name={'Arrow/Point'} size={10} color={'var(--primary500)'} hoverable={false} />
             <Styled.RoadmapDetailWrap>
+                <Styled.DetailTopSection>
+                    <Styled.DetailTitleSection>
+                        <Styled.RoadmapTitle>{period}</Styled.RoadmapTitle>
+                        <Styled.RoadmapSubTitle>{position}</Styled.RoadmapSubTitle>
+                    </Styled.DetailTitleSection>
+                    <Styled.RoadmapTagSection>
+                        <Tag keyword={companyName} size={'medium'} theme={'offStyle'} />
+                    </Styled.RoadmapTagSection>
+                </Styled.DetailTopSection>
                 <Styled.RoadmapDetailSection>
-                    <Styled.RoadmapTitle>{period}</Styled.RoadmapTitle>
-                    <Styled.RoadmapSubTitle>{position}</Styled.RoadmapSubTitle>
                     <Styled.CareerRoadmapDetail>
                         {description &&
                             description.split('\n').map((desc, index) => {
@@ -71,9 +85,6 @@ export const CareerRoadmap = ({
                             })}
                     </Styled.CareerRoadmapDetail>
                 </Styled.RoadmapDetailSection>
-                <Styled.RoadmapTagSection>
-                    <Tag keyword={companyName} size={'medium'} theme={'offStyle'} />
-                </Styled.RoadmapTagSection>
             </Styled.RoadmapDetailWrap>
         </Styled.RoadmapItem>
     );

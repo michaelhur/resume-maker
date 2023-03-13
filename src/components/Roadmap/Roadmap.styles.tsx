@@ -10,16 +10,63 @@ export const RoadmapItem = styled.li`
     border-left: 1px solid var(--primary100);
 
     & svg {
-        transform: translateX(-21.5px);
+        transform: translate(-21.5px, 5px);
         flex: 0 0 10px;
     }
 `;
 
 export const RoadmapDetailWrap = styled.div`
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+`;
+
+export const DetailTopSection = styled.div`
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+`;
+
+export const DetailTitleSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+`;
+
+export const RoadmapTitle = styled.span`
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary500);
+
+    width: 100%;
+`;
+
+export const RoadmapSubTitle = styled.span`
+    font-size: 18px;
+    color: var(--grey1000);
+
+    width: 100%;
+`;
+
+export const RoadmapTagSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0;
+
+    margin: 0;
+
+    flex: 0 1 100%;
 `;
 
 export const RoadmapDetailSection = styled.div`
@@ -31,17 +78,6 @@ export const RoadmapDetailSection = styled.div`
     gap: 0px;
 
     width: 100%;
-`;
-
-export const RoadmapTitle = styled.span`
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--primary500);
-`;
-
-export const RoadmapSubTitle = styled.span`
-    font-size: 18px;
-    color: var(-grey1000);
 `;
 
 export const EduRoadmapDetail = styled.div`
@@ -70,18 +106,6 @@ export const CareerRoadmapDetail = styled.ul`
         & span {
             font-size: 14px;
             color: var(--grey500);
-            line-height: 1;
         }
     }
-`;
-
-export const RoadmapTagSection = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-
-    width: 100%;
-    margin: 0;
 `;
